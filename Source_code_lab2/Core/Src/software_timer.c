@@ -4,7 +4,7 @@
  *  Created on: Oct 1, 2023
  *      Author: Minh Hieu
  */
-
+#include "software_timer.h"
 
 int timer1_flag = 0 ;
 int timer1_counter = 0 ;
