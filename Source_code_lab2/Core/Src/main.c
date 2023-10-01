@@ -214,6 +214,7 @@ int change = 0 ;
 	  }
 	  if (timer2_flag == 1){
 		  HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin);
+		  setTimer2(100);
 	  }
     /* USER CODE BEGIN 3 */
   }
