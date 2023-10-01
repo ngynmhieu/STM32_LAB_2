@@ -203,7 +203,7 @@ void updateClockBuffer(){
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+//Ex6
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
