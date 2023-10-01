@@ -224,7 +224,7 @@ HAL_TIM_Base_Start_IT(&htim2);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-setTimer1(50);
+setTimer1(25);
 setTimer2(100);
 setTimer3(100);
 int index = 0 ;
@@ -233,7 +233,7 @@ while (1)
   /* USER CODE END WHILE */
 	  if (timer1_flag == 1){
 		  update7SEG(index++);
-		  setTimer1 (50);
+		  setTimer1 (25);
 		  if (index >= 4) index = 0;
 	  }
 	  if (timer2_flag == 1){
