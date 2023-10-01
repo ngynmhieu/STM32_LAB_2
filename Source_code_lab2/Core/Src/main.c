@@ -227,13 +227,14 @@ HAL_TIM_Base_Start_IT(&htim2);
 setTimer1(50);
 setTimer2(100);
 setTimer3(100);
-int change = 0 ;
+int index = 0 ;
 while (1)
 {
   /* USER CODE END WHILE */
 	  if (timer1_flag == 1){
-
+		  update7SEG(index++);
 		  setTimer1 (50);
+		  if (index >= 4) index = 0;
 	  }
 	  if (timer2_flag == 1){
 		  HAL_GPIO_TogglePin(dot_GPIO_Port, dot_Pin);
