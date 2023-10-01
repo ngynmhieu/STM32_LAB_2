@@ -194,7 +194,6 @@ while (1)
 {
   /* USER CODE END WHILE */
 	  if (timer1_flag == 1){
-		  HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin);
 		  switch(change){
 		  case 0:
 			  display7SEG(1);
