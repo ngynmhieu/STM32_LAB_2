@@ -235,7 +235,6 @@ setTimer1(25);
 setTimer2(100);
 setTimer3(100);
 setTimer4(100);
-int index = 0 ;
 while (1)
 {
   /* USER CODE END WHILE */
@@ -256,9 +255,9 @@ while (1)
 		    setTimer4(100);
 	  }
 	  if (timer1_flag == 1){
-		  update7SEG(index++);
+		  update7SEG(index_led++);
 		  setTimer1 (25);
-		  if (index >= 4) index = 0;
+		  if (index_led >= 4) index_led = 0;
 	  }
 	  if (timer2_flag == 1){
 		  HAL_GPIO_TogglePin(dot_GPIO_Port, dot_Pin);
