@@ -301,7 +301,7 @@ setTimer1(25);
 setTimer2(100);
 setTimer3(100);
 setTimer4(100);
-setTimer5(10);
+setTimer5(100);
 while (1)
 {
   /* USER CODE END WHILE */
@@ -336,7 +336,12 @@ while (1)
 	  }
 	  if (timer5_flag == 1){
 		  updateLEDMatrix(index_led_matrix ++);
-		  if (index_led_matrix > 8) index_led_matrix = 0;
+		  if (index_led_matrix > 7) {
+			  index_led_matrix = 0;
+			  for (int i = 0 ; i<8; i++){
+				  matrix_buffer[i] = matrix_buffer[i]<<1 | matrix_buffer[i] >> 7;
+			  }
+		  }
 		  setTimer5(10);
 	  }
   /* USER CODE BEGIN 3 */
