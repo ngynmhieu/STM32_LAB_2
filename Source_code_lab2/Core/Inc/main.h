@@ -58,6 +58,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define col0_Pin GPIO_PIN_2
+#define col0_GPIO_Port GPIOA
+#define col1_Pin GPIO_PIN_3
+#define col1_GPIO_Port GPIOA
 #define dot_Pin GPIO_PIN_4
 #define dot_GPIO_Port GPIOA
 #define led_Pin GPIO_PIN_5
@@ -72,10 +76,34 @@ void Error_Handler(void);
 #define b_GPIO_Port GPIOB
 #define c_Pin GPIO_PIN_2
 #define c_GPIO_Port GPIOB
+#define row2_Pin GPIO_PIN_10
+#define row2_GPIO_Port GPIOB
+#define row3_Pin GPIO_PIN_11
+#define row3_GPIO_Port GPIOB
+#define row4_Pin GPIO_PIN_12
+#define row4_GPIO_Port GPIOB
+#define row5_Pin GPIO_PIN_13
+#define row5_GPIO_Port GPIOB
+#define row6_Pin GPIO_PIN_14
+#define row6_GPIO_Port GPIOB
+#define row7_Pin GPIO_PIN_15
+#define row7_GPIO_Port GPIOB
 #define en2_Pin GPIO_PIN_8
 #define en2_GPIO_Port GPIOA
 #define en3_Pin GPIO_PIN_9
 #define en3_GPIO_Port GPIOA
+#define col2_Pin GPIO_PIN_10
+#define col2_GPIO_Port GPIOA
+#define col3_Pin GPIO_PIN_11
+#define col3_GPIO_Port GPIOA
+#define col4_Pin GPIO_PIN_12
+#define col4_GPIO_Port GPIOA
+#define col5_Pin GPIO_PIN_13
+#define col5_GPIO_Port GPIOA
+#define col6_Pin GPIO_PIN_14
+#define col6_GPIO_Port GPIOA
+#define col7_Pin GPIO_PIN_15
+#define col7_GPIO_Port GPIOA
 #define d_Pin GPIO_PIN_3
 #define d_GPIO_Port GPIOB
 #define e_Pin GPIO_PIN_4
@@ -84,6 +112,10 @@ void Error_Handler(void);
 #define f_GPIO_Port GPIOB
 #define g_Pin GPIO_PIN_6
 #define g_GPIO_Port GPIOB
+#define row0_Pin GPIO_PIN_8
+#define row0_GPIO_Port GPIOB
+#define row1_Pin GPIO_PIN_9
+#define row1_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
