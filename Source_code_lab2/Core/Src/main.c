@@ -228,7 +228,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE END 2 */
-
+//Ex7
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 setTimer1(25);
